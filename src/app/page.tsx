@@ -1,11 +1,28 @@
-import { Wordmark } from "@/components/brand/wordmark";
+import { Approach } from "@/components/home/approach";
+import { Contact } from "@/components/home/contact";
+import { FeaturedWork } from "@/components/home/featured-work";
+import { Hero } from "@/components/home/hero";
+import { Principals } from "@/components/home/principals";
+import { Services } from "@/components/home/services";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteNav } from "@/components/layout/site-nav";
+import { seedCases } from "@/content/cases";
 
-// Scaffold placeholder — replaced by the homepage sections in PR 2.
 export default function Home() {
+  const featured = seedCases.filter((c) => c.featured).sort((a, b) => a.order - b.order);
+
   return (
-    <main className="shell flex min-h-dvh flex-col justify-center gap-10">
-      <Wordmark size="mid" />
-      <p className="eyebrow">Foundation · tokens · type · background layers</p>
-    </main>
+    <>
+      <SiteNav />
+      <main>
+        <Hero />
+        <Services />
+        <FeaturedWork cases={featured} />
+        <Approach />
+        <Principals />
+        <Contact />
+      </main>
+      <SiteFooter />
+    </>
   );
 }

@@ -10,8 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: "bg-accent text-accent-fg hover:bg-fg",
-        outline:
-          "border border-line-strong text-fg hover:border-accent hover:text-accent",
+        outline: "border border-line-strong text-fg hover:border-accent hover:text-accent",
         ghost: "text-fg-secondary hover:text-accent",
       },
       size: {
