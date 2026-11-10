@@ -44,7 +44,7 @@ export default async function CasePage({ params }: PageProps<"/work/[slug]">) {
                 {item.hook}
               </p>
               <div className="mt-[clamp(56px,6vw,96px)]">
-                <MetricRow metrics={item.metrics} />
+                <MetricRow metrics={item.metrics} animate={item.slug === "medical"} />
               </div>
             </div>
           </header>
