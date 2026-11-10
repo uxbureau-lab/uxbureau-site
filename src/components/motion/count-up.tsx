@@ -41,7 +41,8 @@ function Counter({ value, target, suffix }: { value: string; target: number; suf
   }, [count, inView, reduce, target]);
 
   return (
-    <span ref={ref} aria-label={value}>
+    <span ref={ref}>
+      <span className="sr-only">{value}</span>
       <motion.span aria-hidden>{text}</motion.span>
     </span>
   );
