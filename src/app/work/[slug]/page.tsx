@@ -8,7 +8,8 @@ import { getCase, getCases } from "@/lib/cases";
 
 export async function generateStaticParams() {
   const cases = await getCases();
-  return cases.map((c) => ({ slug: c.slug }));
+  // SalesCure has a dedicated promo page at /work/salescure.
+  return cases.filter((c) => c.slug !== "salescure").map((c) => ({ slug: c.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps<"/work/[slug]">): Promise<Metadata> {
