@@ -20,7 +20,7 @@ export function Wordmark({ size = "nav", mono = false, className }: WordmarkProp
 
   return (
     <span
-      className={cn("inline-flex items-center whitespace-nowrap leading-none text-fg", className)}
+      className={cn("text-fg inline-flex items-center leading-none whitespace-nowrap", className)}
       aria-label="UX Bureau"
       role="img"
     >
@@ -42,10 +42,13 @@ export function Wordmark({ size = "nav", mono = false, className }: WordmarkProp
         style={{ marginLeft: s.rule[1], marginRight: s.rule[0] }}
       >
         <span
-          className="absolute left-1/2 top-0 -translate-x-1/2"
+          className="absolute top-0 left-1/2 -translate-x-1/2"
           style={{ width: s.tick[0], height: s.tick[1], background: ruleColour }}
         />
-        <span className="block" style={{ width: s.bar[0], height: s.bar[1], background: ruleColour }} />
+        <span
+          className="block"
+          style={{ width: s.bar[0], height: s.bar[1], background: ruleColour }}
+        />
         <span
           className="absolute bottom-0 left-1/2 -translate-x-1/2"
           style={{ width: s.tick[0], height: s.tick[1], background: ruleColour }}
