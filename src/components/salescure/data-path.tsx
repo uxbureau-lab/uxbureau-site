@@ -44,7 +44,7 @@ export function DataPath() {
             aria-selected={stage === s.key}
             onClick={() => setStage(s.key)}
             className={cn(
-              "border-line flex flex-col gap-1 px-4 py-5 text-left transition-colors md:px-6",
+              "border-line flex min-w-0 flex-col gap-1 px-3 py-4 text-left transition-colors sm:px-4 sm:py-5 md:px-6",
               i > 0 && "border-l",
               stage === s.key ? "bg-[#0a0e1f]" : "hover:bg-surface-raised",
             )}
@@ -57,7 +57,9 @@ export function DataPath() {
             >
               0{i + 1} →
             </span>
-            <span className="font-display text-xl md:text-2xl">{s.label}</span>
+            <span className="font-display text-base leading-tight break-words sm:text-xl md:text-2xl">
+              {s.label}
+            </span>
             <span className="text-fg-muted text-xs md:text-sm">{s.note}</span>
           </button>
         ))}

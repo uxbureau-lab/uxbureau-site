@@ -6,18 +6,16 @@ export function Hero() {
   return (
     <section className="hero-gradient relative" aria-labelledby="hero-title">
       <div className="shell pt-[clamp(96px,14vw,200px)] pb-[clamp(64px,8vw,120px)]">
-        <Reveal>
-          <p className="eyebrow">{hero.eyebrow}</p>
+        <p className="eyebrow">{hero.eyebrow}</p>
 
-          <h1
-            id="hero-title"
-            className="font-display mt-10 max-w-[11ch] text-[clamp(64px,10vw,180px)] leading-[0.95] font-normal tracking-[-0.03em] md:pl-[4%]"
-          >
-            {hero.tagline.before}
-            <span className="accent-underline">{hero.tagline.keyword}</span>
-            {hero.tagline.after}
-          </h1>
-        </Reveal>
+        <h1
+          id="hero-title"
+          className="font-display mt-10 max-w-[11ch] text-[clamp(64px,10vw,180px)] leading-[0.95] font-normal tracking-[-0.03em] md:pl-[4%]"
+        >
+          {hero.tagline.before}
+          <span className="accent-underline">{hero.tagline.keyword}</span>
+          {hero.tagline.after}
+        </h1>
 
         <Reveal delay={0.15}>
           <div className="mt-12 grid gap-10 md:grid-cols-12 md:pl-[4%]">

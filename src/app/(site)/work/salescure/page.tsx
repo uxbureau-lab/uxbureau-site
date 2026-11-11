@@ -38,12 +38,11 @@ export default function SalesCurePage() {
             <Link href="/work" className="eyebrow hover:text-accent transition-colors">
               ← Engagements
             </Link>
-            <Reveal>
-              <p className="eyebrow mt-12">Product · Healthcare · Web ERP + AI layer + mobile</p>
-              <h1 className="font-display mt-8 max-w-[14ch] text-[clamp(52px,7vw,120px)] leading-[0.98] tracking-[-0.03em]">
-                One contour instead of ten spreadsheets.
-              </h1>
-            </Reveal>
+            <p className="eyebrow mt-12">Product · Healthcare · Web ERP + AI layer + mobile</p>
+            <h1 className="font-display mt-8 max-w-[14ch] text-[clamp(52px,7vw,120px)] leading-[0.98] tracking-[-0.03em]">
+              One contour instead of ten spreadsheets.
+            </h1>
+
             <Reveal delay={0.15}>
               <p className="text-fg-secondary mt-8 max-w-[56ch] text-lg leading-relaxed md:text-xl">
                 SalesCure is an operating system for medical referral networks: a CRM for referring

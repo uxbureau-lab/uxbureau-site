@@ -11,7 +11,7 @@ export function SiteNav() {
   return (
     <header className="border-line bg-bg/80 sticky top-0 z-40 border-b backdrop-blur-md">
       <nav className="shell flex h-16 items-center justify-between" aria-label="Main">
-        <Link href="/" aria-label="UX Bureau — home">
+        <Link href="/">
           <Wordmark size="nav" />
         </Link>
         <ul className="text-fg-secondary flex items-center gap-6 text-sm md:gap-10">
